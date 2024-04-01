@@ -1,4 +1,4 @@
-from Config.database import Base
+from config.database import Base
 from sqlalchemy import Column, Integer, String, Float
 
 class Movie(Base):
