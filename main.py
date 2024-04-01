@@ -4,12 +4,12 @@ from typing import List, Optional
 from pydantic import BaseModel, Field
 from jwt_manager import create_token, validate_token
 from fastapi.security import HTTPBearer
-#from config.database import Session, engine, Base
-#from models.movie import Movie as MovieModel
+from Config.database import Session, engine, Base
+from models.movie import Movie as MovieModel
 
 # Creando una instancia de la clase FastAPI
 app = FastAPI()
-#Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 # Cambios a la documentacion
 app.title = "Mi Super Api"
