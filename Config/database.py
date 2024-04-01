@@ -9,7 +9,7 @@ sqlite_file_name = "database.sqlite"
 base_dir = os.path.dirname(os.path.dirname(__file__))
 
 path_file_database = os.path.join(base_dir, "..", sqlite_file_name)
-
+print(path_file_database)
 database_url = f"sqlite:///{path_file_database}"
 
 engine = create_engine(database_url, echo=True)
